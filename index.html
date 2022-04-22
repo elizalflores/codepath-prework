@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>The Ocarina of Light and Sound</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      The Ocarina of Light and Sound
+    </h1>
+    <h3>
+      <i>A Memory Game</i>
+    </h3>
+    
+    <div id="scoreBoard">
+      <button id="bestScore" class="disable">0</button>
+      <button id="replayBtn" onclick="playBestSequence()"></button>
+    </div>
+
+    <div id="lightButtons">                           
+        <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
+        <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
+        <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
+        <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
+        <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"></button>
+    </div>
+    
+    <div id="difficultyButtons">
+      <button id="easyBtn" onclick="setDifficulty(1)">Easy</button>
+      <button id="mediumBtn" onclick="setDifficulty(2)">Medium</button>
+      <button id="hardBtn" onclick="setDifficulty(3)">Hard</button>
+      <button id="endlessBtn" onclick="setDifficulty(-1)">Endless</button>
+    </div>
+    
+    <div id="menuAreaButtons">
+      <button id="startBtn" onclick="startGame()"> Start </button>
+      <button id="stopBtn" class="hidden" onclick="stopGame()"> Stop </button>
+    </div>
+    
+    <div id="infoText">
+      Well...this isn't an ocarina exactly. Instead, it's the shield of a certain hero who did have an ocarina.
+      <br>Think you've got what it takes?
+      Repeat the pattern back correctly to win the game!
+      <br><em>Note: If you know how to play a certain song from a certain place, play it on the shield!</em>
+    </div>
+    
+    <audio src="https://cdn.glitch.global/2f7d4e8f-85bc-4d38-b900-ace276b758c2/OOT_Navi_Hey1.wav?v=1650613083287" id="naviHey"></audio>
+    <audio src="https://cdn.glitch.global/2f7d4e8f-85bc-4d38-b900-ace276b758c2/OOT_Navi_Listen1.wav?v=1650613531302" id="naviListen"></audio>
+    <audio src="https://cdn.glitch.global/2f7d4e8f-85bc-4d38-b900-ace276b758c2/OOT_Get_SmallItem1.wav?v=1650347377532" id="easyWin"></audio>
+    <audio src="https://cdn.glitch.global/2f7d4e8f-85bc-4d38-b900-ace276b758c2/OOT_Get_SmallItem2.wav?v=1650347387709" id="medWin"></audio>
+    <audio src="https://cdn.glitch.global/2f7d4e8f-85bc-4d38-b900-ace276b758c2/OOT_Fanfare_SmallItem.wav?v=1650301965048" id="hardWin"></audio>
+    <audio src="https://cdn.glitch.global/2f7d4e8f-85bc-4d38-b900-ace276b758c2/OOT_Fanfare_HeartContainer.wav?v=1650347402186" id="endWin"></audio>
+    <audio src="https://cdn.glitch.global/2f7d4e8f-85bc-4d38-b900-ace276b758c2/OOT_Error.wav?v=1650307131654" id="loseSound"></audio>
+    <audio src="https://cdn.glitch.global/2f7d4e8f-85bc-4d38-b900-ace276b758c2/OOT_Secret.wav?v=1650307384281" id="secretSound"></audio>
+    <audio src="https://cdn.glitch.global/2f7d4e8f-85bc-4d38-b900-ace276b758c2/34%20-%20Ocarina%20'Saria's%20Song'.mp3?v=1650268859149" id="sariaSong"></audio>
+    
+  </body>
+</html>

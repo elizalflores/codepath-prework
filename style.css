@@ -1,0 +1,315 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: rgba(37, 77, 37, .75);
+  background: url(https://cdn.glitch.global/2f7d4e8f-85bc-4d38-b900-ace276b758c2/m3f4tpagbcy31.png?v=1650347408768);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+
+h1 {
+  font-family: Trebuchet MS, aria, sans-serif;
+  text-align: center;
+  margin:0;
+  padding:0;
+}
+
+h3 {
+  margin:0;
+  padding:0;
+}
+
+#infoText {
+  margin: auto;
+  width: 750px;
+  height: 100px;
+  background: #9c7c38;
+  border: 5px outset rgba(191, 193, 194);
+  padding: 10px;
+}
+
+#scoreBoard {
+  display: grid;
+  grid-template-columns: 62px 70px;
+  grid-column-gap: 100px;
+  justify-content: center;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+}
+
+#bestScore {
+  position: relative;
+  background: #9c7c38;
+  padding: 26px 26px;
+  font-size: 18px;
+  height: 63px;
+  line-height: 43px;
+  border-radius: 20px;
+  color: black;
+  margin: auto;
+  text-align: center;
+}
+
+#bestScore:after {
+  content: "Best Score";
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  color: black;
+}
+
+#replayBtn {
+  position: relative;
+  background: #9c7c38;
+  padding: 30px 30px;
+  font-size: 18px;
+  height: 63px;
+  line-height: 43px;
+  border-radius: 20px;
+  color: black;
+  margin: auto;
+  text-align: center;
+}
+
+#replayBtn:after {
+  content: "Best Replay";
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+}
+
+#replayBtn:active, #replayBtn.lit {
+  background: #ffd700;
+}
+
+button {
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+  font-weight: bold;
+  border-color: #F0F0F0;
+}
+
+#lightButtons {
+  position: relative;
+  width:500px;
+  height:500px;
+  border: .25rem solid;
+  border-radius: 50%;
+  border-style:solid;
+  border-color: rgba(156, 124, 56, 0);/*make ring transparent to show shield*/
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.disable {
+  pointer-events: none;
+}
+
+#button1 {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 15px 50px 30px 0;
+  -moz-border-raidus: 15px 50px 30px 0;
+  -webkit-border-radius: 0px 30px 30px 0px;
+  background: darkgreen;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0px 0px -250px;
+  border-style: solid;
+  border-width: 7px;
+  border-color: #BBC2CC;
+}
+
+#button1:active, #button1.lit {
+  background: url(https://cdn.glitch.global/2f7d4e8f-85bc-4d38-b900-ace276b758c2/TWW_Deku_Leaf_Render.png?v=1650266595294), lightgreen;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: 75% 25%;
+  
+}
+
+#button2 {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 30px 0px 0px 15px;
+  -moz-border-raidus: 30px 0px 0px 15px;
+  -webkit-border-radius: 30px 0px 0px 15px;
+  background: darkblue;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0px 0px 0px;
+  border-style: outset;
+  border-width: 7px;
+  border-color: rgba(191, 193, 194);
+}
+
+#button2:active, #button2.lit {
+  background: url(https://cdn.glitch.global/2f7d4e8f-85bc-4d38-b900-ace276b758c2/master_sword.png?v=1650265624892), lightblue;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#button3 {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 0 0 0 250px;
+  -moz-border-raidus: 0 0 0 250px;
+  -webkit-border-radius: 0 0 8px 250px;
+  background: darkred;
+  top: 50%;
+  left: 50%;
+  margin: 0 -250px 0px -250px;
+  border-style: outset;
+  border-width: 7px;
+  border-color: rgba(191, 193, 194);
+}
+
+#button3:active, #button3.lit {
+  background: url(https://cdn.glitch.global/2f7d4e8f-85bc-4d38-b900-ace276b758c2/telescope.png?v=1650265686793), red;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+#button4 {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 0 0 250px 0;
+  -moz-border-raidus: 0 0 250px 0;
+  -webkit-border-radius: 0 0 250px 8px;
+  background: #F1C40F;
+  top: 50%;
+  left: 50%;
+  margin: 0 0px -250px 0;
+  border-style: solid;
+  border-width: 7px;
+  border-color: #6C6D6E;
+}
+
+#button4:active, #button4.lit {
+  background: url(https://cdn.glitch.global/2f7d4e8f-85bc-4d38-b900-ace276b758c2/boomerang.png?v=1650265887091), #F7DC6F;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: left 10% top;
+}
+
+#button5 {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: #76448A;
+  top: 47%;
+  left: 50%;
+  margin: -125px 0 0 -125px;
+  border-style: outset;
+  border-width: 10px;
+  border-color: rgba(191, 193, 194);
+}
+
+#button5:active, #button5.lit {
+  background: url(https://cdn.glitch.global/2f7d4e8f-85bc-4d38-b900-ace276b758c2/TWW_Big_Key_Render.png?v=1650266483546), #9B59B6;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#startBtn {
+  background: #7DCEA0;
+  font-family: Trebuchet MS, aria, sans-serif;
+  font-size: 18px;
+}
+
+#startBtn:active, #startBtn.lit {
+  background: #ABEBC6;
+}
+
+#stopBtn {
+  background: #CD6155;
+  font-family: Trebuchet MS, aria, sans-serif;
+  font-size: 18px;
+}
+
+#stopBtn:active, #stopBtn.lit {
+  background: #F1948A;
+}
+
+#easyBtn {
+  background: #9c7c38;
+}
+
+#easyBtn:active, #easyBtn.lit {
+  background: #6dc4c7;
+}
+
+#mediumBtn {
+  background: #9c7c38;
+}
+
+#mediumBtn:active, #mediumBtn.lit {
+  background: #ffc87c;
+}
+
+#hardBtn {
+  background: #9c7c38;
+}
+
+#hardBtn:active, #hardBtn.lit {
+  background: #c42121;
+}
+
+#endlessBtn {
+  background: #9c7c38;
+}
+
+#endlessBtn:active, #endlessBtn.lit {
+  background: #9400d3;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
