@@ -180,7 +180,6 @@ function playClueSequence() {
   
   let delay = nextClueWaitTime; //set delay to initial wait time
   for(let i = 0; i <= progress; i++) { // for each clue that is revealed so far
-    console.log("play single clue: " + pattern[i] + " in " + delay + "ms")
     setTimeout(playSingleClue,delay,pattern[i]) // set a timeout to play that clue
     delay += clueHoldTime;
     delay += cluePauseTime;
@@ -343,21 +342,21 @@ function setDifficulty(size) {
     document.getElementById("mediumBtn").classList.remove("lit");
     document.getElementById("hardBtn").classList.remove("lit");
   }
-  if(size == 1) {
+  if(size == 6) {
     difficulty = "Easy";
     document.getElementById("easyBtn").classList.add("lit");
     document.getElementById("mediumBtn").classList.remove("lit");
     document.getElementById("hardBtn").classList.remove("lit");
     document.getElementById("endlessBtn").classList.remove("lit");
   }
-  if(size == 2) {
+  if(size == 8) {
     difficulty = "Medium";
     document.getElementById("mediumBtn").classList.add("lit");
     document.getElementById("easyBtn").classList.remove("lit");
     document.getElementById("hardBtn").classList.remove("lit");
     document.getElementById("endlessBtn").classList.remove("lit");
   }
-  if(size == 3) {
+  if(size == 10) {
     difficulty = "Hard";
     document.getElementById("hardBtn").classList.add("lit");
     document.getElementById("easyBtn").classList.remove("lit");
