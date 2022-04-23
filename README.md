@@ -139,7 +139,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
     - HTML/CSS/JS: [MDN](https://developer.mozilla.org/en-US/), [W3S](https://www.w3schools.com/), [StackOverflow](https://stackoverflow.com/), [YouTube](https://www.youtube.com/), [DigitalOcean](https://www.digitalocean.com/community/tutorials/css-align-justify#justify-content), [Programiz](https://www.programiz.com/javascript/examples/function-overloading#:~:text=In%20programming%2C%20function%20overloading%20refers,at%20the%20last%20gets%20executed.)
     - Color Codes: [HTML Color Codes](https://html-color.codes/purple), [Google Color Picker](https://g.co/kgs/S72M7M)
-    - Rotating the images:[Pine Tools](https://pinetools.com/rotate-image)
+    - Rotating the images: [Pine Tools](https://pinetools.com/rotate-image)
     - Audio: [Noproblo - Zelda Sounds](http://noproblo.dayjo.org/ZeldaSounds/)
     - General Project Help & Questions: CodePath Prework Support Slack Channel :iphone: :speech_balloon:
     - Inspiration: [2048](https://play2048.co/), the electronic Simon Says game, The Legend of Zelda video game series :bow_and_arrow: :shield:
