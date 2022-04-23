@@ -49,10 +49,91 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-![](gif1-link-here)
-![](gif2-link-here)
-![](gif3-link-here)
-![](gif4-link-here)
+
+  **Note: Certain additional features are built into the game design and can be see throughout every GIF**
+  - Button lights toggling on/off upon selection
+  - Button(s) staying lit during gameplay
+  - Specific win/lose audio & messages
+  - Disabled buttons
+
+<details><summary>Required & Optional Features:</summary>
+  
+  Shows the required features and most optional features implemented.
+  
+  Optional features excluded: different button pitch and different pattern per game (this is displayed throughout each GIF).
+  
+  ![](https://i.imgur.com/DWfcwZZ.gif)
+</details>
+
+<details><summary>Easy Mode:</summary>
+  
+  Plays through 6 Clues.
+
+  ![](https://i.imgur.com/b6KXxHd.gif)
+</details>
+
+<details><summary>Medium Mode:</summary>
+  
+  Plays through 8 Clues.
+
+  ![](https://i.imgur.com/306i7Qa.gif)
+</details>
+
+<details><summary>Hard Mode:</summary>
+
+  Plays through 10 Clues.
+
+  ![](https://i.imgur.com/2detqfO.gif)
+</details>
+
+<details><summary>Endless Mode:</summary>
+
+  Plays a random sequence until the user guesses incorrectly.
+
+  Since the array must be resized dynamically, the game only pushes one clue at a time (starting the game with one clue). This is to closely control the array size alongside the user's guesses. After the initial first clue, once the user guesses an input, if the guess is correct then another, single clue is pushed into the array. This repeats until the user makes an incorrect guess.
+
+  Once an incorrect guess is made, the game either categorizes the game as the new best score (updating the scoreboard and replay feature with the new state) or a simple losing game (the user did not beat their best score).
+
+  ![](https://i.imgur.com/QXwDbE5.gif)
+</details>
+
+<details><summary>Disabled During Replay:</summary>
+
+  All buttons are disabled while "Best Replay" is activated.
+    
+  Plays the best score saved. If a new score is greater than the best score, the replay is updated with the new sequence, becoming the new best.
+
+  ![](https://i.imgur.com/IEPob9d.gif)
+</details>
+
+<details><summary>Disabled During Regular Play:</summary>
+
+  All buttons are disabled while any game is active (difficulty displayed: Endless).
+  
+  ![](https://i.imgur.com/DC6o0Jw.gif)
+</details>
+
+<details><summary>Hidden Easter Egg:</summary>
+
+  When a user enters the correct input under certain conditions, the secret is triggered and a special message appears with and special audio.
+
+  From its initial state, the game tracks the first 6 inputs from the user and stores them into an array. Once 6 inputs have been read, the user array is compared with the secret array. If they match, trigger the secret. If not, reset the user input count and clear the user array for another attempt (unknown to the user).
+
+  Conditions:
+  - No game mode is active (initial state of the page)
+  - The user enters the correct 6 sequence input
+
+  Sequence to trigger easter egg feature: [Green, Blue, Red, Green, Blue, Red]
+
+  The easter egg plays "Saria's Song," a theme from The Legend of Zelda: Ocarina of Time. The button frequencies use similar musical notes as the notes to play the song in the actual game.
+
+  If the user does not trigger the easter egg on the first try, they have unlimited attempts to trigger the secret. However, the above conditions must be met. If the user offsets their input sequence so that the array isn't fully cleared on their next attempt (ex: they enter 7 inputs, so the 7th input is stored into index 0 of the array when it should be empty for a proper attempt), then they will not trigger the secret unless:
+
+  - The webpage is refreshed
+  - The state of the game is reset by starting a game and either stopping or finishing it.
+  
+  ![](https://i.imgur.com/qZt3bCa.gif)
+</details>
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
