@@ -115,7 +115,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 <details><summary>Hidden Easter Egg:</summary>
 
-  When a user enters the correct input under certain conditions, the secret is triggered and a special message appears with and special audio.
+  When a user enters the correct input under certain conditions, the secret is triggered and a special message appears with special audio.
 
   From its initial state, the game tracks the first 6 inputs from the user and stores them into an array. Once 6 inputs have been read, the user array is compared with the secret array. If they match, trigger the secret. If not, reset the user input count and clear the user array for another attempt (unknown to the user).
 
@@ -141,18 +141,18 @@ If you recorded multiple GIFs for all the implemented features, you can add them
     - Color Codes: [HTML Color Codes](https://html-color.codes/purple), [Google Color Picker](https://g.co/kgs/S72M7M)
     - Rotating the images:[Pine Tools](https://pinetools.com/rotate-image)
     - Audio: [Noproblo - Zelda Sounds](http://noproblo.dayjo.org/ZeldaSounds/)
+    - General Project Help & Questions: CodePath Prework Support Slack Channel :iphone: :speech_balloon:
     - Inspiration: [2048](https://play2048.co/), the electronic Simon Says game, The Legend of Zelda video game series :bow_and_arrow: :shield:
     - User testing, gathering feedback, and bouncing ideas around: Friends & Family :family_man_woman_boy: :sparkling_heart:
-    - General Project Help & Questions: CodePath Prework Support Slack Channel :iphone: :speech_balloon:
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
     - **Disabling Buttons**
   
-      During the many iterations of playtesting, I realized that I had an issue where I was able to press the game buttons while the clue sequence played, accidentally sabatoging the run by either: confusing myself by interrupting the sequence or triggering a Game Over due to the "incorrect" guess. Since I know my peers might have considered this same issue, I decided to search through the CodePath Prework Support Slack Channel to see if anybody had already posted this issue.
+      During playtesting, I realized that I had an issue where I was able to press the game buttons while the clue sequence played, accidentally sabatoging the run by either: confusing myself by interrupting the sequence or triggering a Game Over due to the "incorrect" guess. Since I know my peers might have considered this same issue, I decided to search through the CodePath Prework Support Slack Channel to see if anybody had already posted this issue.
       
-      Luckily, I came across a thread that described the issue I looked for, and it was resolved (by the applicant themselves - kudos to them!). And even luckier was that they were encouraged by the TA to post a hint for other applicants to see. Using that hint, I realized that I needed to modify both my CSS and JS code to implement this feature: I needed to add an element to disable mouse-clicks and figure out where to trigger that element in my logic. In addition, I had to decide how long these buttons would need to be disabled (another key hint). After I found the right spot in my logic, I just had to figure out the timeout equation and disable the buttons for that duration while the clue sequence ran.
+      Luckily, I came across a thread that described the issue I looked for, and it was resolved (by the applicant themselves - kudos to them!). Also, they were encouraged by the TA to post a hint for other applicants to see. Using that hint, I realized that I needed to modify both my CSS and JS to implement this feature: I needed to add an element to disable mouse-clicks and figure out where to trigger that element in my logic. In addition, I had to decide how long these buttons would need to be disabled (another key hint). After I found the right spot in my logic, I just had to figure out the timeout equation and disable the buttons for that duration while the clue sequence ran.
       
-      (Once implemented, I used this key function in other ways, namely adjusting the audio and custom message pop up for smoother transitions.)
+      (Once implemented, I used this key function in other ways, namely adjusting the audio and custom message pop ups for smoother transitions.)
     - **Formatting "Best Score" & "Best Replay"**
   
       Once I decided to implement the Endless difficulty mode, I knew I wanted to display a scoreboard (the idea for adding the replay feature came later). Once I had my buttons created in HTML, I struggled with formatting the buttons in the way I wanted on the page (centered, above the game itself, placed on the right side with the informational text on the left - the inspiration came from seeing 2048's scoreboard & text layout).
@@ -174,7 +174,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
     
     - **Is mobile development similar to web development?**
     
-      One area I am particularly interested in is mobile development. Having worked on this program, to make my it more mobile-friendly, would I develop it in a similar way using mobile tools? How similar are mobile and web development? Is it best to learn both?
+      One area I am particularly interested in is mobile development. Having worked on this program, to make it more mobile-friendly would I develop it in a similar way using mobile tools? How similar are mobile and web development? Is it best to learn both?
       
       (I learned mobile apps can be web, hybrid, or native. I understand that choosing one depends on the needs/purpose of app, but is there a preference or trend in the current market? Why?)
     
