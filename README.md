@@ -50,7 +50,7 @@ The following **additional** features are implemented:
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 
-  **Note: Certain additional features are built into the game design and can be see throughout every GIF**
+  **Note: Certain additional features are built into the game design and can be seen throughout every GIF**
   - Button lights toggling on/off upon selection
   - Button(s) staying lit during gameplay
   - Specific win/lose audio & messages
